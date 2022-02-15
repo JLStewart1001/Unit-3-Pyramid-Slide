@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+  <h1>Mario 3</h1>
+  
+  <br><br>
+
+  <p>When you say</p>
+  <p><strong>Draw a pyramid</strong></p>
+  <p>I say:</p>
+
+  <br><br>
+
+  <form>
+  Brick Symbol:
+  <select id="dropDown">
+    <option value="#">#</option>
+    <option value="%">%</option>
+    <option value="@">@</option>
+    <option value="$">$</option>
+  </select>
+  </form>
+
+  <br>
+
+  <label>How high?</label>
+
+  <br>
+
+  <input type="range" min="1" max="100" value="50" class="slider" id="heightNum">
+  <p>Value: <span id="demo"></span></p>
+
+  <br><br>
+
+  <br><br>
+  
+  <p id="rowStr"></p>
+  <div id="pyramid"></div>
+  <script src="mario.js"></script>
+</body>
+</html>
